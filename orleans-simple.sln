@@ -6,6 +6,17 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "orleans-simple", "orleans-simple.csproj", "{20386B0D-9EC6-4C2B-A453-E0B3A78823A6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFolder", "SolutionFolder", "{1457D227-9565-4462-9EB4-F2DD7E0F2916}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\deploy.yml = .github\workflows\deploy.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "flex", "flex", "{7D27B53A-DAA7-4F31-BBE2-7B6AF334BFFC}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\flex\container-app.bicep = .github\workflows\flex\container-app.bicep
+		.github\workflows\flex\environment.bicep = .github\workflows\flex\environment.bicep
+		.github\workflows\flex\main.bicep = .github\workflows\flex\main.bicep
+		.github\workflows\flex\storage.bicep = .github\workflows\flex\storage.bicep
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,5 +34,8 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {934E52AB-F066-4F6C-B973-DE60F8B29826}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7D27B53A-DAA7-4F31-BBE2-7B6AF334BFFC} = {1457D227-9565-4462-9EB4-F2DD7E0F2916}
 	EndGlobalSection
 EndGlobal
